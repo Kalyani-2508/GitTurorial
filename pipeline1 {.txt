@@ -1,0 +1,39 @@
+pipeline {
+    agent any
+    stages {
+        stage('Job 1') {
+            steps {
+                script {
+                    bat 'path\\to\\your\\batchfile1.bat'
+                }
+            }
+        }
+        stage('Job 2') {
+            steps {
+                script {
+                    bat 'path\\to\\your\\batchfile2.bat'
+                }
+            }
+        }
+        stage('Job 3') {
+            steps {
+                script {
+                    bat 'path\\to\\your\\batchfile3.bat'
+                }
+            }
+        }
+        // Add more stages as needed
+    }
+
+    post {
+        always {
+            echo 'Pipeline completed.'
+        }
+        success {
+            echo 'Pipeline succeeded.'
+        }
+        failure {
+            echo 'Pipeline failed.'
+        }
+    }
+}
