@@ -26,9 +26,13 @@ public class LargestNumberSum {
             largest = num3;
         }
 
-        // Display the sum of the largest number
+        // Calculate the average of the three numbers
+        double average = (num1 + num2 + num3) / 3.0;
+
+        // Display the largest number, its sum, and the average
         System.out.println("The largest number is: " + largest);
         System.out.println("The sum of the largest number is: " + largest);
+        System.out.println("The average of the three numbers is: " + average);
 
         scanner.close();
     }
