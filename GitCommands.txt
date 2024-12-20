@@ -2,18 +2,56 @@
  
  git config --global user.email "erandekalyani@gmail.com"
 
+Navigate to Your Project Directory:
 cd D:\JavaProgram
 
+
+Initialize Git Repository:
 git init
 
+
+Add Your Java File to Git:
 git add LargestNumberSum.java
 
+
+If you want to add all the files in the current directory, you can use:
 git add .
 
+
+Commit the Changes:
 git commit -m "Add LargestNumberSum program"
 
+To Change branch:
 git branch -M main
 
+
+Add Remote GitHub Repository:
 git remote add origin git@github.com:Kalyani-2508/GitTutorial.git
 
+
+Push the Code to GitHub
 git push -u origin main
+
+
+Modify the Program and Push the Updates:
+
+Add Modified Files to Staging:
+git add LargestNumberSum.java
+
+
+Commit the Changes:
+git commit -m "Add logic to calculate the average of the three numbers"
+
+Push the Changes to GitHub:
+git push
+
+
+
+Remove repository path to add new:-
+git remote remove origin
+
+add new Repository:-
+git remote add origin https://github.com/Kalyani-2508/GitTurorial.git
+
+git push -u origin main
+
