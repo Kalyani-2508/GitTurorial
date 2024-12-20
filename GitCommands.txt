@@ -14,6 +14,6 @@ git commit -m "Add LargestNumberSum program"
 
 git branch -M main
 
-git remote add origin git@github.com:Kalyani-2508/Project.git
+git remote add origin git@github.com:Kalyani-2508/GitTutorial.git
 
 git push -u origin main
