@@ -1,0 +1,19 @@
+ git config --global user.name "Kalyani-2508"
+ 
+ git config --global user.email "erandekalyani@gmail.com"
+
+cd D:\JavaProgram
+
+git init
+
+git add LargestNumberSum.java
+
+git add .
+
+git commit -m "Add LargestNumberSum program"
+
+git branch -M main
+
+git remote add origin git@github.com:Kalyani-2508/Project.git
+
+git push -u origin main
